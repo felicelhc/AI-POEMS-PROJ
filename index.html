@@ -4,10 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
-    <title>AI POEMS</title>
+    <title>AI POET</title>
   </head>
   <body>
-    <h1>hello!</h1>
+    <header><h1>AI Poem Generator</h1></header>
+    <main>
+      <form>
+        <input
+          id="prompt-input"
+          type="text"
+          placeholder="Please enter a prompt..."
+          autofocus
+          required
+        />
+        <input id="submit-button" type="submit" />
+      </form>
+      <div id="poem-space">
+        This is where <br />
+        the poem <br />
+        will go.
+      </div>
+    </main>
     <footer>
       This project was coded by
       <a href="https://github.com/felicelhc" target="_blank">Felice Leung</a>
