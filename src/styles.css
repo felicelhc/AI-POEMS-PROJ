@@ -1,0 +1,90 @@
+body {
+  background-color: #dee8f2;
+}
+
+.container {
+  background-color: #bccbdb;
+  border-radius: 30px;
+  font-family: "Architects Daughter", cursive;
+  font-size: 20px;
+  margin: 120px auto;
+  max-width: 700px;
+  padding: 30px 50px;
+}
+
+h1 {
+  color: #233152;
+  font-family: "Mountains of Christmas", serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 20px auto;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  margin: 0 10px;
+}
+
+#prompt-input {
+  border: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 7px 1px #9ba8d0;
+  font-family: "Architects Daughter", cursive;
+  font-size: 15px;
+  padding: 10px;
+  width: 80%;
+}
+
+input::placeholder {
+  color: #9ba8d0;
+  font-size: 20px;
+}
+
+#submit-button {
+  background: #fff;
+  border: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 7px 1px #9ba8d0;
+  color: #9ba8d0;
+  font-family: "Architects Daughter", cursive;
+  font-size: 20px;
+  margin-left: 20px;
+  padding: 5px 15px;
+}
+
+#submit-button:hover {
+  background: #9ba8d0;
+  box-shadow: 5px 5px 7px 1px #fff;
+  color: #fff;
+  transition: all 200ms ease-in-out;
+}
+
+#poem-space {
+  background: rgba(155, 168, 208, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #d8dcec, 0 0 15px #fff;
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 25px auto;
+  max-width: 640px;
+  padding: 20px;
+}
+
+footer {
+  color: #8796c1;
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.links {
+  color: #233152;
+  text-decoration: none;
+}
+
+.links:hover {
+  color: #ba9ab1;
+}
