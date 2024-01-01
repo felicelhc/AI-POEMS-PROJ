@@ -24,17 +24,20 @@
     <div class="container">
       <header><h1>AI Poem Generator</h1></header>
       <main>
-        <form id="poem-form">
-          <input
-            id="prompt-input"
-            type="text"
-            placeholder="Please enter a prompt..."
-            autofocus
-            required
-          />
-          <input id="submit-button" type="submit" />
-        </form>
-        <div id="poem-space"></div>
+        <div class="form-container">
+          <form id="poem-form">
+            <input
+              id="prompt-input"
+              type="text"
+              placeholder="Please enter a prompt..."
+              autofocus
+              required
+            />
+            <input id="submit-button" type="submit" />
+          </form>
+          <div class="hint">eg. cake, trees, pies, etc</div>
+        </div>
+        <div class="hidden" id="poem-space"></div>
       </main>
       <footer>
         This project was coded by

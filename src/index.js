@@ -15,9 +15,11 @@ function generatePoem(event) {
   let context =
     "You are a romantic poet. Generate all text in HTML format and separate each and all sentences with <br />. You must use rhyming couplets for the last 2 lines. All text align left and do not generate a title. Sign off with '- SheCodes AI'.";
   let poem = document.querySelector("#poem-space");
-  poem.innerHTML = "Work in progress...";
+  poem.innerHTML = `<div class="blink"> ✨Generating a poem about ${instructions.value}...</div>`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   axios.get(apiUrl).then(displayPoem);
+  let poemElement = document.querySelector("#poem-space");
+  poemElement.classList.remove("hidden");
 }
 
 let poemForm = document.querySelector("#poem-form");

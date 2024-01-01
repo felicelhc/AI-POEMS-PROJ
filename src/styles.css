@@ -60,17 +60,44 @@ input::placeholder {
   transition: all 200ms ease-in-out;
 }
 
+.hint {
+  color: #233152;
+  font-size: 15px;
+  margin: 5px 0 0 10px;
+  opacity: 0.8;
+}
+
 #poem-space {
   background: #233152;
   border-radius: 10px;
   box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
   color: #d2bbcc;
-  display: flex;
   font-size: 20px;
   line-height: 25px;
   margin: 25px auto;
   max-width: 640px;
   padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.blink {
+  -webkit-animation: blink 4s infinite both;
+  animation: blink 4s infinite both;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
 }
 
 footer {
